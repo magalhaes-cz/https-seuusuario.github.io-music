@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* fundo escuro */
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player-container {
+  background-color: #1c1c1c;
+  color: white;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.track-info {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.track-info h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.track-info p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+#progress-bar {
+  flex: 1;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 10px 0;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#volume-bar {
+  flex: 1;
+}
